@@ -1,0 +1,23 @@
+{
+  "name": "package-test-ground",
+  "description": "For when you need to test your ESM & CJS packages",
+  "version": "1.0.0",
+  "author": "Josh Ellis",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "clean": "turbo run clean && rm -rf node_modules",
+    "build": "turbo run build",
+    "prettier:write": "prettier --write .",
+    "prettier:check": "prettier --check .",
+    "workspace:add": "PACKAGE=$0 ./scripts/add-package.sh"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.4",
+    "turbo": "^1.8.2"
+  },
+  "packageManager": "yarn@3.4.1"
+}

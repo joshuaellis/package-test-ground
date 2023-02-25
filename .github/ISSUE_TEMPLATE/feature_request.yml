@@ -1,0 +1,18 @@
+name: 🚀 Feature Proposal
+description: Submit a proposal for a new feature
+title: '[feat]: '
+labels: ['template: request']
+body:
+  - type: textarea
+    attributes:
+      label: A clear and concise description of what the feature is
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Why should this feature be included?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Please provide an example for how this would work

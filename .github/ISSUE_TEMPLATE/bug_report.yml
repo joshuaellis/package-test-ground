@@ -1,0 +1,29 @@
+name: 🐞 Bug Report 🐛
+description: File a bug report
+title: '[bug]: '
+labels: ['template: bug']
+body:
+  - type: textarea
+    attributes:
+      label: "What's Wrong?"
+      description: A concise description of what you expected to happen
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: To Reproduce
+      description: Steps to reproduce the behavior
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Expected Behaviour
+      description: What you expected to happen
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Link to repo
+      description: This is highly encouraged, provide either a Codesandbox demo or Github Repo
+    validations:
+      required: true
